@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15CAEF">
+
+    <!-- Ellipse Shape Background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:background="@drawable/ellipse_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Main Container -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="User"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-56dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/iconprofile" />
+        </LinearLayout>
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="348dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/radius"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.5"
+                android:src="@drawable/iconsearch" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Kamu mau pergi kemana?"
+                android:inputType="text"
+                android:layout_marginStart="10dp"
+                android:minHeight="48dp"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent"
+                android:textColorHint="#ffffff"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="352dp"
+            android:layout_height="157dp"
+            android:layout_margin="7dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp"
+            android:background="@drawable/rounded_shadow">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_shadow"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gambartur" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Transportasi"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/pesawat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/transportation_shadow"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesawat"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#ffffff"
+                    android:textSize="32sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transportasiudara"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#15CAEF"
+                    android:background="@drawable/transportation_radius"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/iconplane" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/transportation_shadow"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kereta"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#ffffff"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transportasi Darat"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/transportation_radius"
+                    android:textColor="#15CAEF"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/icontrain" />
+        </LinearLayout>
+
+        <!-- Ship -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/transportation_shadow"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kapal Laut"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#ffffff"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transportasi Laut"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/transportation_radius"
+                    android:textColor="#15CAEF"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/iconship" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="15dp" android:left="15dp" android:top="15dp" android:bottom="15dp">
+        <shape>
+            <solid android:color="#000000"/> <!-- Bayangan hitam transparan -->
+            <corners android:radius="10dp"/> <!-- Sudut melengkung sesuai cardCornerRadius -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffffff"/> <!-- Warna background putih -->
+            <corners android:radius="15dp"/> <!-- Sudut melengkung sesuai cardCornerRadius -->
+        </shape>
+    </item>
+</layer-list>
